@@ -13,13 +13,14 @@ const orderUrl = 'https://deliveroo.co.uk/menu/london/chiswick/kitch-chiswick/?f
 const instagramUrl = 'https://www.instagram.com/kitchcafe/';
 const mapsUrl = 'https://www.google.com/maps/search/?api=1&query=6%20Bedford%20Park%20Corner%2C%20Chiswick%2C%20London%20W4%201LS';
 
+// Real KiTCH imagery published by Volcano Coffee Works in its KiTCH feature.
 const images = {
-  hero: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=2200&q=90',
-  coffee: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=90',
-  breakfast: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1600&q=90',
-  sandwich: 'https://images.unsplash.com/photo-1550507992-eb63ffee0847?auto=format&fit=crop&w=1600&q=90',
-  pastry: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1600&q=90',
-  interior: 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1800&q=90'
+  hero: 'https://cdn.shopify.com/s/files/1/2502/9096/files/2_0de524a2-9628-4bff-a0eb-a780c0ea3138.png?v=1748421069',
+  coffee: 'https://cdn.shopify.com/s/files/1/2502/9096/files/10.png?v=1748421306',
+  breakfast: 'https://cdn.shopify.com/s/files/1/2502/9096/files/Screenshot_2025-05-28_092942_820a3659-1f37-4121-80d1-fa80e3f37074.jpg?v=1748421205',
+  sandwich: 'https://cdn.shopify.com/s/files/1/2502/9096/files/Screenshot_2025-05-28_092850.jpg?v=1748421247',
+  pastry: 'https://cdn.shopify.com/s/files/1/2502/9096/files/7.png?v=1748421278',
+  interior: 'https://cdn.shopify.com/s/files/1/2502/9096/files/2_0de524a2-9628-4bff-a0eb-a780c0ea3138.png?v=1748421069'
 };
 
 function App() {
@@ -69,7 +70,7 @@ function App() {
 
         <section className="editorial">
           <div className="editorialmain">
-            <img src={images.breakfast} alt="Breakfast at KiTCH" />
+            <img src={images.breakfast} alt="KiTCH food" />
             <div className="caption"><span>01</span><strong>Morning, properly done.</strong><em>Eggs · Pancakes · French Toast</em></div>
           </div>
           <div className="editorialside">
@@ -93,7 +94,7 @@ function App() {
         </section>
 
         <section id="place" className="place">
-          <div className="placeimage"><img src={images.interior} alt="KiTCH Chiswick interior" /></div>
+          <div className="placeimage"><img src={images.interior} alt="KiTCH Chiswick" /></div>
           <div className="placecopy">
             <p className="eyebrow">04 / THE PLACE</p>
             <h2>A little<br/><i>bit of Chiswick.</i></h2>
@@ -104,7 +105,7 @@ function App() {
         </section>
 
         <section className="counter section">
-          <div className="counterimage"><img src={images.pastry} alt="Fresh baked goods" /></div>
+          <div className="counterimage"><img src={images.pastry} alt="KiTCH baked goods" /></div>
           <div className="countercopy"><span>05</span><h2>Something<br/><i>for the counter.</i></h2><p>Pastries, cakes and baked goods for the walk home — or the excuse to stay for another coffee.</p></div>
         </section>
 
