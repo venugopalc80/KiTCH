@@ -1,7 +1,15 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { ArrowUpRight, Clock3, Instagram, MapPin, Menu, X } from 'lucide-react';
+import { ArrowUpRight, Clock3, MapPin, Menu, X } from 'lucide-react';
 import './styles.css';
+
+const InstagramIcon = ({ size = 18 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <rect x="3" y="3" width="18" height="18" rx="5" />
+    <circle cx="12" cy="12" r="4" />
+    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+  </svg>
+);
 
 const images = {
   hero: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1800&q=85',
@@ -14,7 +22,6 @@ const images = {
 
 function App() {
   const [open, setOpen] = React.useState(false);
-
   const close = () => setOpen(false);
 
   return (
@@ -84,7 +91,7 @@ function App() {
             <h2>A little bit<br/><em>of Chiswick.</em></h2>
             <p>We wanted KiTCH to feel like the kind of place you naturally come back to. Vibrant, welcoming and full of character, with local artwork on the walls and Volcano Coffee Works in the cup.</p>
             <p>Bring the dog. Bring a friend. Bring your laptop. Or just bring yourself.</p>
-            <a className="underlink" href="https://www.instagram.com/kitchcafe/" target="_blank" rel="noreferrer">Follow along on Instagram <Instagram size={16}/></a>
+            <a className="underlink" href="https://www.instagram.com/kitchcafe/" target="_blank" rel="noreferrer">Follow along on Instagram <InstagramIcon size={16}/></a>
           </div>
         </section>
 
@@ -95,7 +102,7 @@ function App() {
             <div className="details">
               <div><MapPin size={19}/><p><strong>6 Bedford Park Corner</strong><br/>Chiswick, London W4 1LS</p></div>
               <div><Clock3 size={19}/><p><strong>Mon–Fri</strong> 6:30am–7pm<br/><strong>Sat–Sun</strong> 7am–7pm</p></div>
-              <div><Instagram size={19}/><p><strong>@kitchcafe</strong><br/>Come say hello online.</p></div>
+              <div><InstagramIcon size={19}/><p><strong>@kitchcafe</strong><br/>Come say hello online.</p></div>
             </div>
           </div>
         </section>
