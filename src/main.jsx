@@ -11,6 +11,8 @@ const InstagramIcon = ({ size = 18 }) => (
   </svg>
 );
 
+const orderUrl = 'https://deliveroo.co.uk/menu/london/chiswick/kitch-chiswick/?fulfillment_type=DELIVERY';
+
 const images = {
   hero: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1800&q=85',
   coffee: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=85',
@@ -34,7 +36,7 @@ function App() {
           <a href="#story" onClick={close}>Our story</a>
           <a href="#visit" onClick={close}>Visit</a>
           <a href="https://www.instagram.com/kitchcafe/" target="_blank" rel="noreferrer" onClick={close}>Instagram</a>
-          <a className="navcta" href="#visit" onClick={close}>Order online <ArrowUpRight size={16}/></a>
+          <a className="navcta" href={orderUrl} target="_blank" rel="noreferrer" onClick={close}>Order online <ArrowUpRight size={16}/></a>
         </nav>
         <button className="menubtn" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           {open ? <X size={24}/> : <Menu size={24}/>} 
@@ -46,9 +48,9 @@ function App() {
           <div className="heroimage" style={{backgroundImage: `url(${images.hero})`}} />
           <div className="herooverlay" />
           <div className="herocopy">
-            <p className="eyebrow">COFFEE · FOCACCIA · BAKED GOODS</p>
+            <p className="eyebrow">COFFEE · BREAKFAST · FOCACCIA · BAKED GOODS</p>
             <h1>Your neighbourhood<br/><em>coffee spot.</em></h1>
-            <p className="lede">Good coffee, generous sandwiches and something fresh from the counter. Right by Turnham Green.</p>
+            <p className="lede">Coffee, breakfast, generous sandwiches and something good from the counter. Right by Turnham Green.</p>
             <div className="actions">
               <a className="button light" href="#menu">Explore the menu <ArrowUpRight size={17}/></a>
               <a className="textlink" href="#visit">Find us <MapPin size={16}/></a>
@@ -67,19 +69,19 @@ function App() {
 
         <section className="featuregrid">
           <article className="feature large"><img src={images.coffee} alt="Specialty coffee"/><div><small>01</small><h3>Good coffee,<br/>done properly.</h3></div></article>
-          <article className="feature"><img src={images.sandwich} alt="Fresh sandwich"/><div><small>02</small><h3>Focaccia worth<br/>waking up for.</h3></div></article>
-          <article className="feature"><img src={images.pastry} alt="Fresh baked goods"/><div><small>03</small><h3>Something sweet<br/>for the road.</h3></div></article>
+          <article className="feature"><img src={images.breakfast} alt="Breakfast at KiTCH"/><div><small>02</small><h3>Breakfast worth<br/>waking up for.</h3></div></article>
+          <article className="feature"><img src={images.sandwich} alt="Fresh sandwich"/><div><small>03</small><h3>Sandwiches made<br/>for lunch.</h3></div></article>
         </section>
 
         <section id="menu" className="menu section">
           <div className="sectionlabel">02 / ON THE COUNTER</div>
           <div className="menugrid">
-            <div><h2>Made for<br/><em>slow mornings.</em></h2><p>From a first coffee to a proper lunch, the menu is built around the things Chiswick likes to eat.</p><a className="underlink" href="#visit">Visit KiTCH <ArrowUpRight size={16}/></a></div>
+            <div><h2>Made for<br/><em>slow mornings.</em></h2><p>From a first coffee to a proper lunch, the menu covers breakfast favourites, sandwiches, drinks and fresh options throughout the day.</p><a className="underlink" href={orderUrl} target="_blank" rel="noreferrer">Order online <ArrowUpRight size={16}/></a></div>
             <div className="menuitems">
-              <div><span>01</span><strong>Coffee & espresso</strong><small>Latte · Cappuccino · Oat Latte · Mocha</small></div>
-              <div><span>02</span><strong>Breakfast</strong><small>English Breakfast · Eggs Benedict · Mushroom on Toast</small></div>
-              <div><span>03</span><strong>Focaccia sandwiches</strong><small>Freshly made · generous · built for lunch</small></div>
-              <div><span>04</span><strong>Baked goods</strong><small>Croissants · Cinnamon buns · Cookies & cakes</small></div>
+              <div><span>01</span><strong>Coffee & drinks</strong><small>Latte · Flat White · Cappuccino · Matcha · Chai · Iced drinks</small></div>
+              <div><span>02</span><strong>Breakfast & brunch</strong><small>Eggs Benedict · Pancakes · French Toast · Porridge · Avocado Toast</small></div>
+              <div><span>03</span><strong>Wraps & sandwiches</strong><small>Chicken · Steak · Halloumi · Falafel · Burger</small></div>
+              <div><span>04</span><strong>Fresh drinks</strong><small>Fresh juices · Smoothies · Lemonades · Soft drinks</small></div>
             </div>
           </div>
         </section>
