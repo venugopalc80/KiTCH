@@ -85,10 +85,10 @@ function App() {
             <div><p>Breakfast favourites, focaccia sandwiches, fresh drinks and baked goods. Made for mornings that don't need to be rushed.</p><a className="underlink" href={orderUrl} target="_blank" rel="noreferrer">Order from KiTCH <ArrowUpRight size={15}/></a></div>
           </div>
           <div className="menuitems">
-            <div className="menuitem"><span>01</span><strong>Breakfast & brunch</strong><small>Truffle & Parmesan Scrambled Eggs · Eggs Benedict · Turkish Eggs · Pancakes · French Toast</small></div>
-            <div className="menuitem"><span>02</span><strong>Focaccia & lunch</strong><small>Chicken Wrap · Steak Sandwich · Halloumi Wrap · Falafel Wrap · Beef Burger</small></div>
-            <div className="menuitem"><span>03</span><strong>Coffee & matcha</strong><small>Espresso · Flat White · Cappuccino · Oat Latte · Matcha · Chai · Iced drinks</small></div>
-            <div className="menuitem"><span>04</span><strong>Fresh from the counter</strong><small>Pastries · Cakes · Cookies · Fresh juices · Smoothies · Something sweet</small></div>
+            <div className="menuitem"><span>01</span><strong>Breakfast & brunch</strong><small>Truffle & Parmesan Scrambled Eggs · American Pancakes · Eggs Benedict · Eggs Royale · Turkish Eggs · French Toast · Waffles · Avocado on Toast</small></div>
+            <div className="menuitem"><span>02</span><strong>Lunch & sandwiches</strong><small>Chicken Wrap · Steak Sandwich · Halloumi Wrap · Falafel Wrap · Beef Burger</small></div>
+            <div className="menuitem"><span>03</span><strong>Coffee, matcha & drinks</strong><small>Espresso · Cappuccino · Oat Latte · Iced Coffee · Iced Matcha · Chai · Juices · Smoothies · Soft Drinks</small></div>
+            <div className="menuitem"><span>04</span><strong>Pastries & sweet things</strong><small>Croissants · Baked Goods · Cookies · Cakes · Fresh Counter Favourites</small></div>
           </div>
         </section>
 
