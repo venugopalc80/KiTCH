@@ -34,7 +34,7 @@ function App() {
           <a href="#story" onClick={close}>Our story</a>
           <a href="#visit" onClick={close}>Visit</a>
           <a href="https://www.instagram.com/kitchcafe/" target="_blank" rel="noreferrer" onClick={close}>Instagram</a>
-          <a className="navcta" href="#menu" onClick={close}>See the menu <ArrowUpRight size={16}/></a>
+          <a className="navcta" href="#visit" onClick={close}>Order online <ArrowUpRight size={16}/></a>
         </nav>
         <button className="menubtn" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           {open ? <X size={24}/> : <Menu size={24}/>} 
